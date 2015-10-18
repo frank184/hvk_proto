@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   belongs_to :role
+  has_and_belongs_to_many :addresses
 
   before_validation :set_default_user_role
 
