@@ -55,6 +55,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.9.1.1)
+    colorize (0.7.7)
     daemons (1.2.3)
     debug_inspector (0.0.2)
     devise (3.5.2)
@@ -179,6 +180,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3.5.1)
   byebug
   coffee-rails (~> 4.1.0)
+  colorize (~> 0.7.7)
   devise (~> 3.5.2)
   font-awesome-sass (~> 4.3.0)
   jbuilder (~> 2.0)

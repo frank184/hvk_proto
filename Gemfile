@@ -15,6 +15,7 @@ gem 'devise', '~> 3.5.2'
 gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'font-awesome-sass', '~> 4.3.0'
 gem 'rails-timeago', '~> 2.0'
+gem 'colorize', '~> 0.7.7'
 
 group :development, :test do
   gem 'byebug'
