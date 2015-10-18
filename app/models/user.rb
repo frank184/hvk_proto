@@ -4,6 +4,8 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable, :confirmable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  belongs_to :role
+
   before_validation :set_default_user_role
 
   validates_presence_of :role_id

@@ -1,4 +1,7 @@
 class Role < ActiveRecord::Base
+
+  has_many :users
+
   # Constants
   SYSTEM_ADMINISTRATOR = 1
   EMPLOYEE = 2
