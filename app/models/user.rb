@@ -4,13 +4,20 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable, :confirmable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  ### RELATIONSHIPS ###
   belongs_to :role
   has_and_belongs_to_many :addresses
+  has_and_belongs_to_many :pets
 
+  ### VALIDATION ###
   before_validation :set_default_user_role
-
   validates_presence_of :role_id
 
+  validates_presence_of :first_name
+  validates_presence_of :last_name
+  validates_presence_of :phone_number
+
+  ### CAN'T SEE ME BETCH! ###
   private
 
     def set_default_user_role

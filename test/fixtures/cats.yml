@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  litter_trained: false
+  declawed: false
+  outdoor: false
+  bath: false
+  grooming: false
+  medication: false
+
+two:
+  litter_trained: false
+  declawed: false
+  outdoor: false
+  bath: false
+  grooming: false
+  medication: false

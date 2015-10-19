@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  gender: 
+  birthday: 2015-10-18 22:42:15
+  sprayed_neutered: false
+
+two:
+  name: MyString
+  gender: 
+  birthday: 2015-10-18 22:42:15
+  sprayed_neutered: false
