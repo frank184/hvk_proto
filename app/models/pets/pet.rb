@@ -4,8 +4,14 @@ class Pet < ActiveRecord::Base
   belongs_to :veterinary_clinic
   belongs_to :emergency_contact
   has_and_belongs_to_many :users
-  has_and_belongs_to_many :vaccinations
   has_and_belongs_to_many :notes
+
+  has_many :pets_vaccinations
+  has_many :vaccinations, through: :pets_vaccinations
+
+  ### SCOPES ###
+  scope :dogs, -> { where(:actable_type => "Dog") }
+  scope :cats, -> { where(:actable_type => "Cat") }
 
   ### VALIDATION ###
   validates_presence_of :actable_type

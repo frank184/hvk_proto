@@ -37,6 +37,26 @@ end
 client.attributes.each do |k,v|
   puts " -> " + k.to_s + ": " + v.to_s
 end;puts
+# Employee john@hvk.com
+print "creating john@hvk.com: ".yellow
+employee = User.create(
+  role_id: Role::EMPLOYEE,
+  email: "john@hvk.com",
+  password: "password",
+  first_name: "John",
+  last_name: "Doe",
+  phone_number: "111 111 1111",
+  confirmation_sent_at: Time.now,
+  confirmed_at: Time.now
+)
+if employee.save
+  puts "successful! #{employee.email} #{employee.role.slug}".green
+else
+  puts "#{employee.errors.full_messages.join(', ')}".red
+end
+employee.attributes.each do |k,v|
+  puts " -> " + k.to_s + ": " + v.to_s
+end;puts
 # Admin jim@admin.com
 print "creating jim@admin.com: ".yellow
 jim = User.create(
@@ -126,7 +146,7 @@ end;puts
 
 ## Pets ##
 puts;puts puts "Pets:"
-# Jim and Sally's Fictional Pet
+# Jim and Sally's Fictional Dog
 print "creating fido_reed: ".yellow
 fido_reed = Dog.create(
   users: [jim, sally],
@@ -142,11 +162,46 @@ fido_reed = Dog.create(
   ),
   veterinary_clinic: emergency_clinic
 )
+
+fido_reed.pets_vaccinations.create(
+    pet: fido_reed,
+    vaccination: Vaccination.first,
+    vaccination_datetime: DateTime.now
+  )
 if fido_reed.save
   puts "successful!".green
 else
   puts "#{fido_reed.errors.full_messages.join(', ')}".red
 end
 fido_reed.attributes.each do |k,v|
+  puts " -> " + k.to_s + ": " + v.to_s
+end;puts
+# Jim and Sally's Fictional Cat
+print "creating mr_meow_reed: ".yellow
+mr_meow_reed = Cat.create(
+  users: [jim, sally],
+  name: "Mr.Meow Reed",
+  gender: "M",
+  birthday: Time.now - 2.years,
+  sprayed_neutered: true,
+  emergency_contact: EmergencyContact.create(
+    first_name: jim.first_name,
+    last_name: jim.last_name,
+    phone_number: jim.phone_number
+  ),
+  veterinary_clinic: emergency_clinic
+)
+
+mr_meow_reed.pets_vaccinations.create(
+    pet: mr_meow_reed,
+    vaccination: Vaccination.first,
+    vaccination_datetime: DateTime.now
+  )
+if mr_meow_reed.save
+  puts "successful!".green
+else
+  puts "#{fido_reed.errors.full_messages.join(', ')}".red
+end
+mr_meow_reed.attributes.each do |k,v|
   puts " -> " + k.to_s + ": " + v.to_s
 end;puts

@@ -1,6 +1,7 @@
 class Vaccination < ActiveRecord::Base
   ### RELATIONSHIPS ###
-  has_and_belongs_to_many :pets
+  has_many :pets_vaccinations
+  has_many :pets, through: :pets_vaccinations
 
   ### VALIDATION ###
   validates_presence_of :name

@@ -7,7 +7,15 @@ class User < ActiveRecord::Base
   ### RELATIONSHIPS ###
   belongs_to :role
   has_and_belongs_to_many :addresses
+
   has_and_belongs_to_many :pets
+  has_and_belongs_to_many :dogs, -> { dogs }, class_name: 'Pet'
+  has_and_belongs_to_many :cats, -> { cats }, class_name: 'Pet'
+
+  ### SCOPES ###
+  scope :clients, -> { where role_id: Role::CLIENT }
+  scope :employees, -> { where role_id: Role::EMPLOYEE }
+  scope :admins, -> { where role_id: Role::SYSTEM_ADMINISTRATOR }
 
   ### VALIDATION ###
   before_validation :set_default_user_role
