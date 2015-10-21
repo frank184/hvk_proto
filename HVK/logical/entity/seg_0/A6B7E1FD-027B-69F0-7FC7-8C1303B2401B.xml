@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A6B7E1FD-027B-69F0-7FC7-8C1303B2401B" name="PET_RESERVATION_MEDICATION">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-08 00:18:36 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="pet_id" id="ADB30E2C-6984-2281-3FD1-9ED1F0B8055C">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-21 02:37:19 UTC</createdTime>
+<generatorID>0621D66C-3FEB-2089-6935-112C59382A6D</generatorID>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<referedAttribute>1D9D96EC-037D-1731-CBC5-F025E2A3FC8E</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EA984038-4216-E9A2-C734-4047F32AE36E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reservaton_id" id="F693A2CE-DEAE-7E88-D6FF-FB10CB054983">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-21 02:37:19 UTC</createdTime>
+<generatorID>0621D66C-3FEB-2089-6935-112C59382A6D</generatorID>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<referedAttribute>3E448C72-AF8A-2FBD-FA2A-62E003215E46</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EA984038-4216-E9A2-C734-4047F32AE36E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="749ECD79-95DB-3D4A-4224-CED8FF990361" name="MEDICATION_LOG_ENTRY PK">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-08 12:36:43 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<pk>true</pk>
+</identifier>
+</identifiers>
+</Entity>

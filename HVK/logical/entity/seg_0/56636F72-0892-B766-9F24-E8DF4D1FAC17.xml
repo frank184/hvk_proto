@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="56636F72-0892-B766-9F24-E8DF4D1FAC17" name="FOOD">
+<createdBy>FBelanger</createdBy>
+<createdTime>2015-10-06 21:50:02 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="food_id" id="F8B2960D-A1E1-4FED-9A44-AC5C52E9AE9D">
+<createdBy>FBelanger</createdBy>
+<createdTime>2015-10-06 22:56:28 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="brand_name" id="A252FA77-2FB2-711D-B255-60788A06A0BB">
+<createdBy>FBelanger</createdBy>
+<createdTime>2015-10-06 22:58:31 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4369C8BC-BE5A-A0F3-A809-C33BF95E82E6" name="{entity} PK">
+<createdBy>FBelanger</createdBy>
+<createdTime>2015-10-06 22:56:32 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F8B2960D-A1E1-4FED-9A44-AC5C52E9AE9D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

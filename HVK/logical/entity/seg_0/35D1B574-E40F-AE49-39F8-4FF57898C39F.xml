@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="35D1B574-E40F-AE49-39F8-4FF57898C39F" name="SERVICE">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-09 05:50:58 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="service_id" id="6AE32BF5-6EF2-F95C-5AD1-A57B66537CAC">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-09 05:51:22 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EA984038-4216-E9A2-C734-4047F32AE36E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="service_cost" id="E08FC25B-2BF7-3F15-4259-FEF43CAA4C9D">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-09 05:51:41 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<domain>A46953A6-DAE4-31A5-1025-950CBB945312</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E6BD1BAD-76BD-2AFC-5C14-36E4470D1D36" name="SERVICE PK">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-09 05:51:34 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6AE32BF5-6EF2-F95C-5AD1-A57B66537CAC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="14B2FC0F-2BB6-69F6-A2A6-84DBAAFD2806" name="SUITE">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-09 05:05:01 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>57F60E6E-7C35-D128-E218-3D69ECF58C5C</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="location_id" id="E5B4DF5C-59D0-6750-EE46-2888300034E2">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-09 05:31:10 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EA984038-4216-E9A2-C734-4047F32AE36E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="suite_type" id="A3F4DEB1-F631-84C0-E0CC-921611D0B3CA">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-09 06:59:53 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<use>0</use>
+<domain>169BBAB6-3B50-8865-0B92-FCBE2760FACB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="763A9D35-EDC7-8C97-CC59-0303E2E993A3" name="SUITE PK">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-09 05:34:13 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E5B4DF5C-59D0-6750-EE46-2888300034E2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

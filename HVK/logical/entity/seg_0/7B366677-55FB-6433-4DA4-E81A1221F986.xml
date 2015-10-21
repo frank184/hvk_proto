@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7B366677-55FB-6433-4DA4-E81A1221F986" name="PET_OWNER">
+<createdBy>FBelanger</createdBy>
+<createdTime>2015-10-06 20:53:28 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="pet_id" id="584484A5-6948-1B02-9693-A20B4FD75C77">
+<createdBy>FBelanger</createdBy>
+<createdTime>2015-10-06 20:53:53 UTC</createdTime>
+<generatorID>08520734-45B2-A769-0518-FF073DB46859</generatorID>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<referedAttribute>C4C9A3B1-29B1-61EE-4B4B-EF8AE8E3BEF3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EA984038-4216-E9A2-C734-4047F32AE36E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contact_id" id="3C9E52B3-6680-43FC-65A0-C71032FD35A6">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-09 03:04:11 UTC</createdTime>
+<generatorID>5C4AEB81-A054-D968-C1AC-0233CACCE4B7</generatorID>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<referedAttribute>EB53FF91-80F0-B129-3745-11B3EE4DC221</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EA984038-4216-E9A2-C734-4047F32AE36E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C545769B-3C68-E73B-95D2-BA84422EE40A" name="{entity} PK">
+<createdBy>FBelanger</createdBy>
+<createdTime>2015-10-06 23:06:26 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>584484A5-6948-1B02-9693-A20B4FD75C77</attributeRef>
+<attributeRef>3C9E52B3-6680-43FC-65A0-C71032FD35A6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

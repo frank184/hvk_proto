@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E3F5A76E-17BE-7588-B1EC-FF54B26E4766" name="LOG_ENTRY">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-07 23:49:08 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="log_entry_id" id="21943842-7CB7-11A2-F871-A4C1A7D1F209">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-08 12:34:32 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EA984038-4216-E9A2-C734-4047F32AE36E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="entry_datetime" id="08B7FF43-B368-E50A-2726-F27AA680FB41">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-09 06:13:56 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="entry_text" id="3A673CBC-52BC-AD8A-FAE3-C2F7689EB572">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-09 08:00:55 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>172DDEBC-B9A9-9977-8156-625453DF1292</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pet_id" id="EAE00C14-1261-B861-6DAF-A6F3405F87C7">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-21 02:09:56 UTC</createdTime>
+<generatorID>56058740-D28F-61BA-A731-0F063B62A3C3</generatorID>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<referedAttribute>1D9D96EC-037D-1731-CBC5-F025E2A3FC8E</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EA984038-4216-E9A2-C734-4047F32AE36E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reservaton_id" id="9963937D-5482-2E23-7D5E-32C66F36CB27">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-21 02:09:56 UTC</createdTime>
+<generatorID>56058740-D28F-61BA-A731-0F063B62A3C3</generatorID>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<referedAttribute>3E448C72-AF8A-2FBD-FA2A-62E003215E46</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EA984038-4216-E9A2-C734-4047F32AE36E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="567EA7E4-F712-2E4E-DE1E-7A82B9B869F1" name="LOG_ENTRY PK">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-07 23:51:18 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>21943842-7CB7-11A2-F871-A4C1A7D1F209</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

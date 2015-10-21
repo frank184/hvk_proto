@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="HVK" id="427990E3-E2BC-A103-A6E6-EAEF0E12B147" version="3.5">
+<createdBy>FBelanger</createdBy>
+<createdTime>2015-09-21 20:46:06 UTC</createdTime>
+<ownerDesignName>fbelanger_D10_A01_Entity_Defn</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>427990E3-E2BC-A103-A6E6-EAEF0E12B147</designId>
+</OSDM_Design>

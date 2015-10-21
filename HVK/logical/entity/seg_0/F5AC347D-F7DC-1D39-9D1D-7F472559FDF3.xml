@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F5AC347D-F7DC-1D39-9D1D-7F472559FDF3" name="PET_VACCINATION">
+<createdBy>FBelanger</createdBy>
+<createdTime>2015-10-06 20:59:20 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="pet_id" id="52F61C66-358C-1EB5-9F3F-CCF63592A91B">
+<createdBy>FBelanger</createdBy>
+<createdTime>2015-10-06 21:48:50 UTC</createdTime>
+<generatorID>9A1D39D9-2295-2996-57E2-3F69794A2F83</generatorID>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<referedAttribute>C4C9A3B1-29B1-61EE-4B4B-EF8AE8E3BEF3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EA984038-4216-E9A2-C734-4047F32AE36E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vaccination_datetime" id="1F532A96-2DB0-7BAE-7A53-3CF138537AB4">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-09 06:12:10 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vaccine_id" id="5D37AFE5-6994-165C-D9C8-15459045EEAD">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-09 07:42:33 UTC</createdTime>
+<generatorID>B8A80C34-BCA7-81AE-A98B-8A90FC669659</generatorID>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<referedAttribute>6C4823DB-7610-330C-269C-D763AE85B6D1</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EA984038-4216-E9A2-C734-4047F32AE36E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1E1A2068-5682-EE0D-C8E4-7E7D68D8C60A" name="PET_VACCINATIONS PK">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-07 23:56:31 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>52F61C66-358C-1EB5-9F3F-CCF63592A91B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

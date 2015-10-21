@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E0FF02C0-D25E-1541-B6C0-AD74641F8C87" name="RESERVATION_DISCOUNT">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-09 07:24:34 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="pet_id" id="CC7622A0-8B04-EFA2-451F-19F6D073CE05">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-21 02:31:16 UTC</createdTime>
+<generatorID>F487F714-3713-5087-655A-94FB31557752</generatorID>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<referedAttribute>1D9D96EC-037D-1731-CBC5-F025E2A3FC8E</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EA984038-4216-E9A2-C734-4047F32AE36E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reservaton_id" id="37463825-BB69-ECCF-C299-40F8BC5CCA67">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-21 02:31:16 UTC</createdTime>
+<generatorID>F487F714-3713-5087-655A-94FB31557752</generatorID>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<referedAttribute>3E448C72-AF8A-2FBD-FA2A-62E003215E46</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EA984038-4216-E9A2-C734-4047F32AE36E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="discount_id" id="C5BDD577-4E5E-EF77-8687-0889B5966594">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-21 02:34:45 UTC</createdTime>
+<generatorID>F89DF2AE-C4BC-65F9-71B8-7CAC687D6B6E</generatorID>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<referedAttribute>A28CB8A4-1146-5AEC-0AAC-60FD3C9A5E1F</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EA984038-4216-E9A2-C734-4047F32AE36E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

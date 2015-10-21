@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Start datetime:</strong>
+  <%= @reservation.start_datetime %>
+</p>
+
+<p>
+  <strong>End datetime:</strong>
+  <%= @reservation.end_datetime %>
+</p>
+
+<p>
+  <strong>Commited:</strong>
+  <%= @reservation.commited %>
+</p>
+
+<%= link_to 'Edit', edit_reservation_path(@reservation) %> |
+<%= link_to 'Back', reservations_path %>

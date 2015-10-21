@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="89475225-EABF-A172-E39F-E07196A22A47" name="PET" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

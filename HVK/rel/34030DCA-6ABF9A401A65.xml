@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="34030DCA-EC45-D8D4-2620-6ABF9A401A65" mainViewID="A4D2B62B-A495-8F1E-5587-327874C95402">
+<createdBy>FBelanger</createdBy>
+<createdTime>2015-09-21 20:48:28 UTC</createdTime>
+<ownerDesignName>fbelanger_D10_A01_Entity_Defn</ownerDesignName>
+<shouldBeOpen>true</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

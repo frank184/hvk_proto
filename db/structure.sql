@@ -69,7 +69,7 @@ CREATE TABLE `cats` (
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -169,7 +169,7 @@ CREATE TABLE `pets` (
   KEY `index_pets_on_veterinary_clinic_id` (`veterinary_clinic_id`) USING BTREE,
   CONSTRAINT `fk_rails_e1f540bd3b` FOREIGN KEY (`veterinary_clinic_id`) REFERENCES `veterinary_clinics` (`id`),
   CONSTRAINT `fk_rails_108873e11e` FOREIGN KEY (`emergency_contact_id`) REFERENCES `emergency_contacts` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -266,7 +266,7 @@ CREATE TABLE `users` (
   UNIQUE KEY `index_users_on_reset_password_token` (`reset_password_token`) USING BTREE,
   KEY `index_users_on_role_id` (`role_id`) USING BTREE,
   CONSTRAINT `fk_rails_642f17018b` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -316,7 +316,7 @@ CREATE TABLE `veterinary_clinics` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-10-19 21:40:10
+-- Dump completed on 2015-10-20  3:23:00
 INSERT INTO schema_migrations (version) VALUES ('20151018055735');
 
 INSERT INTO schema_migrations (version) VALUES ('20151018061931');

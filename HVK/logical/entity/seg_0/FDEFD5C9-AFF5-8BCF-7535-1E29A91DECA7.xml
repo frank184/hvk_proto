@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FDEFD5C9-AFF5-8BCF-7535-1E29A91DECA7" name="PET_RESERVATION">
+<createdBy>FBelanger</createdBy>
+<createdTime>2015-10-06 21:34:46 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="pet_id" id="1D9D96EC-037D-1731-CBC5-F025E2A3FC8E">
+<createdBy>FBelanger</createdBy>
+<createdTime>2015-10-06 21:34:57 UTC</createdTime>
+<generatorID>56BEC155-6DDF-1AD6-5DC6-048894AC112A</generatorID>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<referedAttribute>C4C9A3B1-29B1-61EE-4B4B-EF8AE8E3BEF3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EA984038-4216-E9A2-C734-4047F32AE36E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reservaton_id" id="3E448C72-AF8A-2FBD-FA2A-62E003215E46">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-09 02:40:02 UTC</createdTime>
+<generatorID>6BF6A446-3F71-D723-E7F7-1F22E2D836D1</generatorID>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<referedAttribute>5D0B9A6F-F47C-5DE4-A14D-B5BF8EAFED8F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EA984038-4216-E9A2-C734-4047F32AE36E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="71AA451C-5243-7253-0402-D3E8533E5681" name="{entity} PK">
+<createdBy>FBelanger</createdBy>
+<createdTime>2015-10-06 23:08:02 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1D9D96EC-037D-1731-CBC5-F025E2A3FC8E</attributeRef>
+<attributeRef>3E448C72-AF8A-2FBD-FA2A-62E003215E46</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

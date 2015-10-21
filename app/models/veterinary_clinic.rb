@@ -2,7 +2,7 @@ class VeterinaryClinic < ActiveRecord::Base
   ### RELATIONSHIPS ###
   has_one :veterinary_clinic
   has_one :emergency_contact
-  
+
   belongs_to :address
   has_many :pets
 

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="6E59987F-4E48-3D4A-0CB2-2784E35547B6">
+<createdBy>FBelanger</createdBy>
+<createdTime>2015-09-21 20:46:07 UTC</createdTime>
+<ownerDesignName>fbelanger_D10_A01_Entity_Defn</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

@@ -1,0 +1,158 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C1EB5073-ADC4-CC36-B330-30CD9B812D4A" name="PET">
+<createdBy>FBelanger</createdBy>
+<createdTime>2015-09-21 21:14:48 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+<item key="E18A155C-8211-3E8E-50D5-13F85E8DCDE0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="pet_id" id="C4C9A3B1-29B1-61EE-4B4B-EF8AE8E3BEF3">
+<createdBy>FBelanger</createdBy>
+<createdTime>2015-09-21 21:14:55 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+<item key="E18A155C-8211-3E8E-50D5-13F85E8DCDE0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EA984038-4216-E9A2-C734-4047F32AE36E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pet_type_id" id="B6B0AF54-EE9F-9BC3-BE7E-C69B7519B36A">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-21 03:23:34 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+<item key="E18A155C-8211-3E8E-50D5-13F85E8DCDE0" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EA984038-4216-E9A2-C734-4047F32AE36E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pet_type" id="49406157-5197-CA41-5251-77992B733CB7">
+<createdBy>FBelanger</createdBy>
+<createdTime>2015-09-21 21:33:15 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+<item key="E18A155C-8211-3E8E-50D5-13F85E8DCDE0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pet_name" id="EF4E2C72-A611-8ECF-3B47-CB713C079C77">
+<createdBy>FBelanger</createdBy>
+<createdTime>2015-09-21 21:15:19 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+<item key="E18A155C-8211-3E8E-50D5-13F85E8DCDE0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DF138EB6-60BA-99E7-A708-F41B6DA1B5EB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pet_gender" id="0F4C8772-6D5B-5B39-B1FB-B636A40C1EE0">
+<createdBy>FBelanger</createdBy>
+<createdTime>2015-09-21 21:16:52 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+<item key="E18A155C-8211-3E8E-50D5-13F85E8DCDE0" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>70CBA9AE-AF1B-2659-EBC2-0765268EBDFD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pet_birthday" id="AC100E09-72FE-1837-19F0-FD56FD3AF2CE">
+<createdBy>FBelanger</createdBy>
+<createdTime>2015-09-21 21:17:08 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+<item key="E18A155C-8211-3E8E-50D5-13F85E8DCDE0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sprayed_neutered?" id="9989C0C3-70EF-FC38-370E-61815A0296B5">
+<createdBy>FBelanger</createdBy>
+<createdTime>2015-09-21 21:20:41 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+<item key="E18A155C-8211-3E8E-50D5-13F85E8DCDE0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contact_id" id="F6B7527E-99B1-4746-0113-6C0DB51B17CD">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-21 02:20:11 UTC</createdTime>
+<generatorID>1D631D0B-3599-11BE-2B4F-3D8F218EBE40</generatorID>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+<item key="E18A155C-8211-3E8E-50D5-13F85E8DCDE0" value="true"/>
+</engineerTo>
+<referedAttribute>A5E9F5E2-6144-29D8-EF66-3A975F118082</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EA984038-4216-E9A2-C734-4047F32AE36E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contact_id1" id="9EDECF76-A744-3836-8C6D-C0A60A570879">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-21 02:48:09 UTC</createdTime>
+<generatorID>9A53B5DE-7E59-EAA8-7053-0573095518C0</generatorID>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+<item key="E18A155C-8211-3E8E-50D5-13F85E8DCDE0" value="true"/>
+</engineerTo>
+<referedAttribute>EEA97CFF-1EFB-B256-E173-468E05353193</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EA984038-4216-E9A2-C734-4047F32AE36E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="96A0E3EB-2B41-5A77-7296-EAC1B17121D2" name="{entity} PK">
+<createdBy>FBelanger</createdBy>
+<createdTime>2015-09-21 21:15:11 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+<item key="E18A155C-8211-3E8E-50D5-13F85E8DCDE0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C4C9A3B1-29B1-61EE-4B4B-EF8AE8E3BEF3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

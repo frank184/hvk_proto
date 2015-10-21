@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5C733F29-00EA-7922-781B-3EB426AD0A67" name="CONTACT">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-09 06:28:10 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="contact_id" id="1EE8715C-01A4-F937-E6BF-A350CDD36DE2">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-09 06:28:25 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>EA984038-4216-E9A2-C734-4047F32AE36E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contact_type" id="7FD639EA-3292-7B29-C2F5-DFD0197E2CEC">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-09 06:40:56 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<use>0</use>
+<domain>93CDD6C1-57D0-B717-593B-A739BB505C7F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="first_name" id="237C89C5-72AC-BEEB-8F66-C39BEB9DE8EF">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-09 06:28:54 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DF138EB6-60BA-99E7-A708-F41B6DA1B5EB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="last_name" id="473B086E-B807-5B86-8E7A-5BE670EB57D7">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-09 06:29:09 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DF138EB6-60BA-99E7-A708-F41B6DA1B5EB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="phone_number" id="A84E0C44-581D-2FD9-FCA8-AA659808C53B">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-09 06:29:25 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>ABAB56C6-FF10-778B-DCAF-E2CCE64556F6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="address" id="663BB9C8-DC08-40FC-B3B3-D30C435841BD">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-09 06:54:34 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4CB82F3A-AD2F-D281-924F-06AA63B8302A" name="CONTACT PK">
+<createdBy>ne0h</createdBy>
+<createdTime>2015-10-09 06:29:20 UTC</createdTime>
+<ownerDesignName>HVK</ownerDesignName>
+<engineerTo>
+<item key="34030DCA-EC45-D8D4-2620-6ABF9A401A65" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1EE8715C-01A4-F937-E6BF-A350CDD36DE2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
