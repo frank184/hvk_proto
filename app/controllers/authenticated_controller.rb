@@ -29,7 +29,7 @@ class AuthenticatedController < ApplicationController
     def set_index
       @index =  case @role
       when Role::CLIENT
-        authenticate_path
+        authenticated_path
       when Role::EMPLOYEE
         employee_authenticated_path
       when Role::SYSTEM_ADMINISTRATOR

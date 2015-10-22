@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151019193121) do
+ActiveRecord::Schema.define(version: 20151021024335) do
 
   create_table "addresses", force: :cascade do |t|
     t.string   "number",     limit: 255
@@ -111,6 +111,14 @@ ActiveRecord::Schema.define(version: 20151019193121) do
 
   add_index "pets_vaccinations", ["pet_id", "vaccination_id"], name: "index_pets_vaccinations_on_pet_id_and_vaccination_id", using: :btree
   add_index "pets_vaccinations", ["vaccination_id", "pet_id"], name: "index_pets_vaccinations_on_vaccination_id_and_pet_id", using: :btree
+
+  create_table "reservations", force: :cascade do |t|
+    t.datetime "start_datetime"
+    t.datetime "end_datetime"
+    t.boolean  "commited"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
 
   create_table "roles", force: :cascade do |t|
     t.string   "slug",       limit: 255
