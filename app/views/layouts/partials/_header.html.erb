@@ -14,6 +14,32 @@
       <div class="pull-right">
         <ul class="nav navbar-nav">
           <% if user_signed_in? %>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                My Pets <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Reservations</a></li>
+                <li><a href="#">Pets</a></li>
+              </ul>
+            </li>
+            <% if @role <= Role::EMPLOYEE %>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                  Manage <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="employee/reservations">Reservations</a></li>
+                  <li><a href="employee/pets">Pets</a></li>
+                  <% if @role == Role::SYSTEM_ADMINISTRATOR %>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="admin/services">Services</a></li>
+                    <li><a href="admin/discounts">Discounts</a></li>
+                    <li><a href="admin/users">Users</a></li>
+                  <% end %>
+                </ul>
+              </li>
+            <% end %>
             <li><%= link_to @user.email, edit_user_registration_path %></li>
             <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
           <% else %>

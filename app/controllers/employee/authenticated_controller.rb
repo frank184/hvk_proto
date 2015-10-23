@@ -4,7 +4,7 @@ class Employee::AuthenticatedController < AuthenticatedController
   private
     def authenticate_employee!
       puts "Employee function attempted access"
-      unless @user.role_id >= Role::EMPLOYEE
+      unless @user.role_id <= Role::EMPLOYEE
         flash[:error] = "You are not allowed to access that"
         redirect_to "/" and return
       end

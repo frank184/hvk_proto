@@ -1,34 +1,29 @@
 Rails.application.routes.draw do
-
-  resources :reservations
   devise_for :users
 
-  # Authenticated Root
+  # Authenticated Routes
   authenticated :user do
     root to: 'authenticated#index'
+    get '/' => 'home#index', as: :authenticated
+    resources :reservations
     resources :pets
-    get 'pets' => 'pets#index', as: :authenticated
 
     namespace :employee do
-      root to: 'authenticated#index'
+      get '/' => 'home#index', as: :authenticated
+      resources :reservations
       resources :pets
-      get 'pets' => 'pets#index', as: :authenticated
     end
 
     namespace :admin do
-      root to: 'authenticated#index'
-
+      get '/' => 'home#index', as: :authenticated
+      resources :reservations
       resources :pets
-      get 'pets', as: :authenticated
     end
-
   end
 
-
-  # Unauthenticated Root
+  # Unauthenticated Routes
   root to: 'home#index', as: :unauthenticated
-  get 'about', to: 'home#about'
-  get 'contact', to: 'home#contact'
-  get 'help', to: 'home#help'
-
+  get 'about', to: 'home#about', path: "/about"
+  get 'contact', to: 'home#contact', path: "/contact"
+  get 'help', to: 'home#help', path: "/help"
 end

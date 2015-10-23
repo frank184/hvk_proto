@@ -27,7 +27,7 @@ class AuthenticatedController < ApplicationController
     end
 
     def set_index
-      @index =  case @role
+      @index = case @role
       when Role::CLIENT
         authenticated_path
       when Role::EMPLOYEE

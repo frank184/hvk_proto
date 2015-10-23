@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151021024335) do
+ActiveRecord::Schema.define(version: 20151022131145) do
 
   create_table "addresses", force: :cascade do |t|
     t.string   "number",     limit: 255
@@ -84,7 +84,7 @@ ActiveRecord::Schema.define(version: 20151021024335) do
     t.string   "name",                 limit: 255
     t.string   "gender",               limit: 1
     t.datetime "birthday"
-    t.boolean  "sprayed_neutered"
+    t.boolean  "fixed"
     t.boolean  "medication"
     t.datetime "created_at",                       null: false
     t.datetime "updated_at",                       null: false
@@ -94,6 +94,14 @@ ActiveRecord::Schema.define(version: 20151021024335) do
 
   add_index "pets", ["emergency_contact_id"], name: "index_pets_on_emergency_contact_id", using: :btree
   add_index "pets", ["veterinary_clinic_id"], name: "index_pets_on_veterinary_clinic_id", using: :btree
+
+  create_table "pets_reservations", id: false, force: :cascade do |t|
+    t.integer "pet_id",         limit: 4, null: false
+    t.integer "reservation_id", limit: 4, null: false
+  end
+
+  add_index "pets_reservations", ["pet_id", "reservation_id"], name: "index_pets_reservations_on_pet_id_and_reservation_id", using: :btree
+  add_index "pets_reservations", ["reservation_id", "pet_id"], name: "index_pets_reservations_on_reservation_id_and_pet_id", using: :btree
 
   create_table "pets_users", id: false, force: :cascade do |t|
     t.integer "pet_id",  limit: 4, null: false
