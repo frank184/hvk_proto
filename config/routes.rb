@@ -3,7 +3,6 @@ Rails.application.routes.draw do
 
   # Authenticated Routes
   authenticated :user do
-    root to: 'authenticated#index'
     get '/' => 'home#index', as: :authenticated
     resources :reservations
     resources :pets
